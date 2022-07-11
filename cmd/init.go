@@ -30,8 +30,8 @@ import (
 var initCmd = &cobra.Command{
 	Use:   "init",
 	Short: "Initial template for any shell script",
-	Long: `This generates basic usage and argument parsing example to start from`,
-	Args: cobra.ExactArgs(1),
+	Long:  `This generates basic usage and argument parsing example to start from`,
+	Args:  cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		initialize.Output(args[0])
 	},
